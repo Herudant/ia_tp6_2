@@ -45,6 +45,7 @@ def load_enron_folders(datasets):
     for j in datasets:
         ham  = ham  + read_folder(path + 'enron' + str(j) + '\ham\*.txt')
         spam = spam + read_folder(path + 'enron' + str(j) + '\spam\*.txt')
+        
     num_ham  = len(ham)
     num_spam = len(spam)
     print("mails:", num_ham+num_spam)
